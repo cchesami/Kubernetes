@@ -44,7 +44,7 @@ sudo systemctl daemon-reload
 sudo systemctl start kubelet
 sudo systemctl enable kubelet.service
 # Run this after server is up and running
-sudo kubeadm init 
-# Get like below and run it on the worker nodes
-sudo kubeadm join 10.0.0.12:6443 --token ro5uey.itw4fpprrp69m2t1 \
+#sudo kubeadm init 
+# Get something like below and run it on the worker nodes
+#sudo kubeadm join 10.0.0.12:6443 --token ro5uey.itw4fpprrp69m2t1 \
         --discovery-token-ca-cert-hash sha256:00bb2dbd4e7bfa3a4c903b75c6d8d0cb130c901065d0b6eb58f61a87994bd21f
