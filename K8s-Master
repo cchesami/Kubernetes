@@ -48,3 +48,5 @@ sudo systemctl enable kubelet.service
 # Get something like below and run it on the worker nodes
 #sudo kubeadm join 10.0.0.12:6443 --token ro5uey.itw4fpprrp69m2t1 \
         --discovery-token-ca-cert-hash sha256:00bb2dbd4e7bfa3a4c903b75c6d8d0cb130c901065d0b6eb58f61a87994bd21f
+# run below cmd to install weave network for communication within cluster
+#sudo kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
